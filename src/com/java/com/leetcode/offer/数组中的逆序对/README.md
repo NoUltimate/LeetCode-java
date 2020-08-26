@@ -1,6 +1,7 @@
 [剑指 Offer 51. 数组中的逆序对](https://leetcode-cn.com/problems/shu-zu-zhong-de-ni-xu-dui-lcof/)
 ---
 # 合并排序
+
 * 通过合并排序过程中合并过程计算逆序对
 * 例如数组[3,1,4,2]在合并排序过程中产生下面两个数组
     * [1,3]
