@@ -1,4 +1,4 @@
-package com.java.com.leetcode.动态规划.最大矩形;
+package com.java.com.leetcode.tag.动态规划.最大矩形;
 
 /**
  * @author sunbowen

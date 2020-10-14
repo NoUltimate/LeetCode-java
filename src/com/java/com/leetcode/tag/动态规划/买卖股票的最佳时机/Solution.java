@@ -1,4 +1,4 @@
-package com.java.com.leetcode.动态规划.买卖股票的最佳时机;
+package com.java.com.leetcode.tag.动态规划.买卖股票的最佳时机;
 
 /**
  * @author sunbowen

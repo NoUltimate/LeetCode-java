@@ -1,4 +1,4 @@
-package com.java.com.leetcode.动态规划.不同的二叉搜索树;
+package com.java.com.leetcode.tag.动态规划.不同的二叉搜索树;
 
 public class Solution {
     public int numTrees(int n) {

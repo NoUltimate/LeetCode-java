@@ -1,4 +1,4 @@
-package com.java.com.leetcode.动态规划.最佳买卖股票时机含冷冻期;
+package com.java.com.leetcode.tag.动态规划.最佳买卖股票时机含冷冻期;
 
 /**
  * @author sunbowen

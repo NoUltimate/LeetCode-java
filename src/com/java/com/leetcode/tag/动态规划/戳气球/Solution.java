@@ -1,6 +1,4 @@
-package com.java.com.leetcode.动态规划.戳气球;
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+package com.java.com.leetcode.tag.动态规划.戳气球;
 
 /**
  * 描述

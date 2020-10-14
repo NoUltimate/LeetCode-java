@@ -1,4 +1,4 @@
-package com.java.com.leetcode.动态规划.爬楼梯;
+package com.java.com.leetcode.tag.动态规划.爬楼梯;
 
 class Solution {
     public int climbStairs(int n) {

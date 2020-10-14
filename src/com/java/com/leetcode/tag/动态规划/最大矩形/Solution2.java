@@ -1,6 +1,6 @@
-package com.java.com.leetcode.动态规划.最大矩形;
+package com.java.com.leetcode.tag.动态规划.最大矩形;
 
-import com.java.com.leetcode.动态规划.柱状图中最大的矩形.Solution;
+import com.java.com.leetcode.tag.动态规划.柱状图中最大的矩形.Solution;
 
 /**
  * @author sunbowen
