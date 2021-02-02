@@ -5,6 +5,11 @@ import com.alibaba.fastjson.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Title: 单词搜索 II
+ * https://leetcode-cn.com/problems/word-search-ii/
+ * Created by sunbowen on 2021/1/28
+ */
 public class Solution2 {
     class Node {
         String word;
