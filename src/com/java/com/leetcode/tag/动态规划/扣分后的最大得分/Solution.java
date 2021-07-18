@@ -1,4 +1,5 @@
-package com.java.com.leetcode.offer.hw;
+package com.java.com.leetcode.tag.动态规划.扣分后的最大得分;
+
 /*
  * https://leetcode-cn.com/problems/maximum-number-of-points-with-cost/
  *
