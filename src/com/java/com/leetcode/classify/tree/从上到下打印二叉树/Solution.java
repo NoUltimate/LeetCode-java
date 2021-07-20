@@ -1,19 +1,19 @@
-package com.java.com.leetcode.offer.hw;
+package com.java.com.leetcode.classify.tree.从上到下打印二叉树;
 /*
+ * https://leetcode-cn.com/problems/cong-shang-dao-xia-da-yin-er-cha-shu-lcof/
  *
  * @author sunbowen
- * @date 2021年06月25日 15:16
+ * @date 2021年07月20日 16:01
  */
 
-import util.ListNode;
 import util.TreeNode;
 
-import java.math.BigDecimal;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 public class Solution {
-
-
     Map<Integer, List<Integer>> ans = new HashMap<>();
 
     public int[] levelOrder(TreeNode root) {
@@ -35,5 +35,4 @@ public class Solution {
         dfs(root.left, h + 1);
         dfs(root.right, h + 1);
     }
-
 }
