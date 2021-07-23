@@ -1,14 +1,10 @@
-package com.java.com.leetcode;
+package com.java.com.leetcode.classify.dp.礼物的最大价值;
 /*
- * @url
- * @name
+ * https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/
+ * 礼物的最大价值
  * @author sunbowen
- * @date 2021年07月20日 16:32
+ * @date 2021年07月23日 15:34
  */
-
-import util.TreeNode;
-
-import java.util.*;
 
 public class Solution {
     public int maxValue(int[][] grid) {
