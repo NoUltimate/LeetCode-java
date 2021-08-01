@@ -7,32 +7,28 @@ package leetcode.classify.array.描述绘画结果;
  * @date 2021年07月29日 14:53
  */
 
+import java.util.*;
+
 public class Solution {
-    int max = 0;
-
-    public int maxCompatibilitySum(int[][] students, int[][] mentors) {
-        dfs(students, mentors, new boolean[students.length], 0, 0);
-        return max;
-    }
-
-    public void dfs(int[][] students, int[][] mentors, boolean[] visit,  int count, int sum) {
-        if (count == mentors.length) {
-            max = Math.max(max, sum);
-            return ;
+    public List<List<Long>> splitPainting(int[][] segments) {
+        Set<List<Long>> result = new HashSet<>();
+        long[][] diff = new long[100001][2];
+        for(int[] segment : segments) {
+            diff[segment[0]][0] += segment[2];
+            diff[segment[1]][1] -= segment[2];
         }
-        for(int i = 0; i < mentors.length; ++i) {
-            if (visit[i]) continue;
-            visit[i] = true;
-            dfs(students, mentors, visit, count + 1, sum + get(students[count], mentors[i]));
-            visit[i] = false;
+        long[] sum = new long[100001];
+        long start = 0;
+        for(int i = 1; i < sum.length; ++i) {
+            sum[i] = sum[i - 1];
+            if (diff[i][0] != 0 || diff[i][1] != 0) {
+                if (sum[i] != 0 && start != 0) {
+                    result.add(Arrays.asList(start, (long)i, sum[i]));
+                }
+                start = i;
+                sum[i] += diff[i][0] + diff[i][1];
+            }
         }
-    }
-
-    public int get(int[] student, int[] mentor) {
-        int count = 0;
-        for(int i = 0; i < student.length; ++i) {
-            if (student[i] == mentor[i]) count++;
-        }
-        return count;
+        return new ArrayList<>(result);
     }
 }
